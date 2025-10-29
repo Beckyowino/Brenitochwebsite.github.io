@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Fees - Brenitoch School</title>
+    <meta name="description"
+        content="Transparent tuition fees, payment plans, and financial information for Brenitoch School.">
+    <meta name="keywords" content="fees, tuition, payment plan, Brenitoch, school fees">
+
+    <!-- Favicons -->
+    <link href="assets/img/logoo.png" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+
+    <!-- Main CSS File -->
+    <link href="assets/css/main.css" rel="stylesheet">
+
+    <style>
+        /* Fees Page Specific Styles - Using Your Design System */
+        .fee-table {
+            border: 1px solid #dee2e6;
+            border-radius: 12px;
+            overflow: hidden;
+        }
+
+        .fee-table th {
+            background-color: #f8f9fa;
+            color: var(--heading-color);
+            font-weight: 600;
+            font-family: var(--heading-font);
+            text-align: center;
+        }
+
+        .fee-table td {
+            vertical-align: middle;
+            text-align: center;
+        }
+
+        .currency {
+            font-weight: 700;
+            color: var(--accent-color);
+            font-size: 1.1rem;
+        }
+
+        .payment-badge {
+            background-color: #d4edda;
+            color: #155724;
+            font-size: 0.8rem;
+            padding: 0.25rem 0.5rem;
+            border-radius: 12px;
+        }
+
+        .fee-category h3 {
+            color: var(--heading-color);
+            font-family: var(--heading-font);
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+        }
+
+        /* Fully Responsive Tables */
+        @media (max-width: 768px) {
+            .fee-table thead {
+                display: none;
+            }
+
+            .fee-table,
+            .fee-table tbody,
+            .fee-table tr,
+            .fee-table td {
+                display: block;
+                width: 100%;
+            }
+
+            .fee-table tr {
+                margin-bottom: 1.5rem;
+                border: 1px solid #dee2e6;
+                border-radius: 12px;
+                padding: 1rem;
+                background-color: #fdfdfd;
+            }
+
+            .fee-table td {
+                text-align: right;
+                padding-left: 50%;
+                position: relative;
+                border: none;
+            }
+
+            .fee-table td::before {
+                content: attr(data-label);
+                position: absolute;
+                left: 0;
+                width: 50%;
+                padding-left: 1rem;
+                font-weight: 600;
+                color: var(--heading-color);
+                text-align: left;
+            }
+
+            .currency {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+
+<body class="fees-page">
+
+   <header id="header" class="header d-flex align-items-center fixed-top">
+		<div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+			<a href="index.html" class="logo d-flex align-items-center">
+				<!-- Uncomment the line below if you also wish to use an image logo -->
+				<img src="assets/img/logoo.png" alt="School Logo">
+			</a>
+
+			<nav id="navmenu" class="navmenu">
+				<ul>
+					<li><a href="index.html" class="active">Our School</a></li>
+					<!-- <li class="dropdown"><a href="about.html"><span>About</span> <i
+								class="bi bi-chevron-down toggle-dropdown"></i></a>
+						<ul>
+							<li><a href="about.html">About Us</a></li>
+							<li><a href="our-facilities.html">School Facilities &amp; Programs</a></li>
+
+						</ul>
+					</li> -->
+					<li><a href="about.html" class="active">About Us</a></li>
+
+					<li class="dropdown">
+						<a href="#"><span>Admissions</span> <i
+								class="bi bi-chevron-down toggle-dropdown"></i></a>
+						<ul>
+							<li><a href="admissions.html">Admission Process</a></li>
+							<li><a href="fees.html">Fees</a></li>
+						</ul>
+					</li>
+
+					<li class="dropdown">
+						<a href="academics.html"><span>Academics</span> <i
+								class="bi bi-chevron-down toggle-dropdown"></i></a>
+						<ul>
+							<li><a href="academics.html">Academics</a></li>
+							<li><a href="students-life.html">Extra-Curricular</a></li>
+						</ul>
+					</li>
+					<li><a href="events.html">Events</a></li>
+					<li><a href="employ.html">Employment</a></li>
+					<li class="dropdown"><a href="#"><span>Quick Links</span> <i
+								class="bi bi-chevron-down toggle-dropdown"></i></a>
+						<ul>
+							<li><a href="accomodation.html">Student Accommodation Info</a></li>
+							<li><a href="scholarship-aid.html">Financial Aid &amp; Scholarships</a></li>
+							<li><a href="community.html">Community Engagement</a></li>
+							<li><a href="portal.html">Portal Login</a></li>
+						</ul>
+					</li>
+					<li><a href="contact.html">Contact</a></li>
+					
+				</ul>
+				<i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+			</nav>
+
+		</div>
+	</header>
+
+
+
+    <main class="main">
+
+        <!-- Page Title -->
+        <div class="page-title dark-background" style="background-image: url(assets/img/education/fees-bg.jpg);">
+            <div class="container position-relative">
+                <h1>School Fees</h1>
+                <nav class="breadcrumbs">
+                    <ol>
+                        <li><a href="index.html">Our School</a></li>
+                        <li class="current">Fees</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+
+        <!-- Fees Section -->
+        <section id="fees" class="fees section stats students-life section">
+            <div class="container" data-aos="fade-up">
+
+                <div class="row">
+                    <div class="col-lg-10 mx-auto">
+
+                        <!-- Intro -->
+                        <div class="text-center mb-5">
+                            <h2>Transparent & Affordable Education</h2>
+                            <p class="lead">We believe in clear, fair, and flexible fee structures. Pay annually or per
+                                term — your choice.</p>
+                            <p class="text-muted"><strong>All fees are in Kenyan Shillings (KES)</strong> and inclusive
+                                of learning materials.</p>
+                        </div>
+
+                        <!-- Payment Options Alert -->
+                        <div class="alert alert-info text-center" data-aos="fade-up" data-aos-delay="100">
+                            <i class="bi bi-info-circle"></i>
+                            <strong>Payment Options:</strong> Full payment at start of year <strong>OR</strong> 3 equal
+                            termly installments.
+                        </div>
+
+                        <!-- Fee Tables -->
+                        <div class="fee-category mt-5" data-aos="fade-up" data-aos-delay="200">
+                            <h3 class="text-center">Pre-Primary (PP1 - PP2)</h3>
+                            <div class="table-responsive">
+                                <table class="table table-bordered fee-table">
+                                    <thead>
+                                        <tr>
+                                            <th>Description</th>
+                                            <th>Per Term</th>
+                                            <th>Annual (Discounted)</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td data-label="Description">Tuition & Activities</td>
+                                            <td data-label="Per Term" class="currency">KSh 45,000</td>
+                                            <td data-label="Annual" class="currency">KSh 130,500 </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <div class="fee-category mt-5" data-aos="fade-up" data-aos-delay="300">
+                            <h3 class="text-center">Lower Primary (Grade 1 - 3)</h3>
+                            <div class="table-responsive">
+                                <table class="table table-bordered fee-table">
+                                    <thead>
+                                        <tr>
+                                            <th>Description</th>
+                                            <th>Per Term</th>
+                                            <th>Annual (Discounted)</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td data-label="Description">Tuition, Books & Co-curricular</td>
+                                            <td data-label="Per Term" class="currency">KSh 68,000</td>
+                                            <td data-label="Annual" class="currency">KSh 197,200</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <div class="fee-category mt-5" data-aos="fade-up" data-aos-delay="400">
+                            <h3 class="text-center">Upper Primary (Grade 4 - 6)</h3>
+                            <div class="table-responsive">
+                                <table class="table table-bordered fee-table">
+                                    <thead>
+                                        <tr>
+                                            <th>Description</th>
+                                            <th>Per Term</th>
+                                            <th>Annual (Discounted)</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td data-label="Description">Tuition, Labs, Sports & Exams</td>
+                                            <td data-label="Per Term" class="currency">KSh 78,000</td>
+                                            <td data-label="Annual" class="currency">KSh 226,200</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <div class="fee-category mt-5" data-aos="fade-up" data-aos-delay="500">
+                            <h3 class="text-center">Junior Secondary (Grade 7 - 9)</h3>
+                            <div class="table-responsive">
+                                <table class="table table-bordered fee-table">
+                                    <thead>
+                                        <tr>
+                                            <th>Description</th>
+                                            <th>Per Term</th>
+                                            <th>Annual (Discounted)</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td data-label="Description">Tuition, STEM Labs, Clubs & CBC Materials</td>
+                                            <td data-label="Per Term" class="currency">KSh 92,000</td>
+                                            <td data-label="Annual" class="currency">KSh 266,800</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <!-- Additional Fees -->
+                        <div class="mt-5 p-4 border rounded bg-light" data-aos="fade-up" data-aos-delay="600">
+                            <h4 class="mb-3">Additional One-Time Fees</h4>
+                            <ul class="list-unstyled">
+                                <li><strong>Admission Fee:</strong> KSh 5,000 (non-refundable)</li>
+                                <li><strong>Uniform Package:</strong> KSh 8,500</li>
+                            </ul>
+                        </div>
+
+                        <!-- Payment Methods -->
+                        <div class="mt-5 text-center" data-aos="fade-up" data-aos-delay="700">
+                            <h4>Payment Methods</h4>
+                            <!-- 1. Payment methods -->
+                            <p class="fees-payment-methods text-muted">
+                                <span>Bank Transfer</span>
+                                <span>M-Pesa</span>
+                                <span>Cheque</span>
+                                <span>Cash at Admissions Office</span>
+                            </p>
+
+                            <!-- 2. Account details -->
+                            <p class="fees-account-details text-muted">
+                                <span><strong>Account Name:</strong> Brenitoch School</span>
+                                <span><strong>Bank:</strong> KCB Juja</span>
+                                <span><strong>A/C:</strong> 1234567890</span>
+                            </p>
+                        </div>
+
+                        <!-- CTA -->
+                        <div class="text-center mt-5" data-aos="fade-up" data-aos-delay="800">
+                            <a href="admissions.html" class="btn btn-primary btn-lg">Start Application</a>
+                            <a href="contact.html" class="btn btn-outline-primary btn-lg ms-3">Inquire About Fees</a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+				<div class="cta-wrapper" data-aos="fade-up" data-aos-delay="200">
+					<div class="cta-content">
+						<div class="row align-items-center">
+							<div class="col-lg-8" data-aos="fade-right" data-aos-delay="300">
+								<h3>Ready to Join Our Community?</h3>
+								<p>
+									Step into a school community that celebrates every student’s potential.
+									Discover, learn, and grow with us at Brenitoch.
+								</p>
+							</div>
+							<div class="col-lg-4" data-aos="fade-left" data-aos-delay="400">
+								<div class="cta-buttons">
+									<a href="#" class="btn btn-primary">Schedule a Visit</a>
+									<a href="#" class="btn btn-outline">Apply Now</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+        </section>
+
+    </main>
+
+  
+	<footer id="footer" class="footer position-relative dark-background">
+		<div class="container footer-top">
+			<div class="row gy-4">
+
+				<!-- About / Contact -->
+				<div class="col-lg-4 col-md-6 footer-about">
+					<a href="index.html" class="logo d-flex align-items-center">
+						<img src="assets/img/logoo.png" alt="Brenitoch School Logo">
+						<span class="sitename ms-2">Brenitoch School</span>
+					</a>
+					<div class="footer-contact pt-3">
+						<p>Brenitoch School, Thika</p>
+						<p>Kiambu County, Kenya</p>
+						<p class="mt-3"><strong>Phone:</strong> <span>+254 725293622</span></p>
+						<p><strong>Email:</strong> <span>schoolsbrenitoch@gmail.com</span></p>
+					</div>
+					<div class="social-links d-flex mt-4">
+						<a href="#"><i class="bi bi-facebook"></i></a>
+						<a href="#"><i class="bi bi-instagram"></i></a>
+						<a href="#"><i class="bi bi-twitter-x"></i></a>
+						<a href="#"><i class="bi bi-linkedin"></i></a>
+					</div>
+				</div>
+
+				<!-- Useful Links -->
+				<div class="col-lg-2 col-md-3 footer-links">
+					<h4>Quick Links</h4>
+					<ul>
+						<li><a href="index.html">Our School</a></li>
+						<li><a href="about.html">About Us</a></li>
+						<li><a href="admissions.html">Admissions</a></li>
+						<li><a href="academics.html">Academics</a></li>
+						<li><a href="contact.html">Contact Us</a></li>
+					</ul>
+				</div>
+
+				<!-- Academics -->
+				<div class="col-lg-2 col-md-3 footer-links">
+					<h4>Academics</h4>
+					<ul>
+						<li><a href="our-facilities.html">School Facilities</a></li>
+						<li><a href="events.html">Events</a></li>
+						<li><a href="community.html">Community Engagement</a></li>
+					</ul>
+				</div>
+
+				<!-- Resources -->
+				<div class="col-lg-2 col-md-3 footer-links">
+					<h4>Resources</h4>
+					<ul>
+						<li><a href="privacy.html">Privacy Policy</a></li>
+						<li><a href="portal.html">Portal Login</a></li>
+					</ul>
+				</div>
+
+				<!-- Support -->
+				<div class="col-lg-2 col-md-3 footer-links">
+					<h4>Support</h4>
+					<ul>
+						<li><a href="financial-aid.html">Financial Aid</a></li>
+						<li><a href="student-life.html">Extra-Curricular</a></li>
+						<li><a href="employ.html">Employment</a></li>
+					</ul>
+				</div>
+
+			</div>
+		</div>
+
+		<div class="container copyright text-center mt-4">
+			<p>© <span>Copyright</span> <strong class="px-1 sitename">Brenitoch School</strong> <span>All Rights
+					Reserved</span></p>
+
+		</div>
+	</footer>
+
+    <!-- Scroll Top -->
+    <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center">
+        <i class="bi bi-arrow-up-short"></i>
+    </a>
+
+    <!-- Preloader -->
+    <div id="preloader"></div>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+
+    <!-- Main JS File -->
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
