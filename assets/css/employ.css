@@ -1,0 +1,413 @@
+/* General Section Styling */
+.employment section {
+  padding: 80px 0;
+  background-color: var(--background-color);
+}
+
+.container {
+  max-width: 1300px;
+}
+
+.section-header {
+  margin-bottom: 50px;
+}
+
+.section-header h3 {
+  font-size: 2 rem;
+}
+
+.section-header p {
+  font-size: 1.1rem;
+}
+
+/* Employment Hero */
+.employment-hero {
+  background: linear-gradient(135deg, color-mix(in srgb, var(--accent-color), transparent 90%) 0%, var(--surface-color) 100%);
+  padding: 60px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.employment-badge {
+  display: inline-block;
+  background-color: var(--accent-color);
+  color: var(--contrast-color);
+  padding: 8px 20px;
+  border-radius: 25px;
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+}
+
+.hero-content h2 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 3.2rem;
+  font-weight: 700;
+  color: var(--heading-color);
+  margin-bottom: 25px;
+}
+
+.hero-content p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.2rem;
+  color: var(--default-color);
+  line-height: 1.7;
+}
+
+.employment-metrics {
+  display: flex;
+  gap: 30px;
+  margin-top: 25px;
+}
+
+.metric {
+  text-align: center;
+}
+
+.metric .counter {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--accent-color);
+}
+
+.metric .label {
+  font-size: 1.1rem;
+  color: var(--default-color);
+}
+
+/* Teaching, Learning, and Living */
+.living-card {
+  background: var(--surface-color);
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.living-card:hover {
+  transform: translateY(-5px);
+}
+
+.living-card .card-icon {
+  font-size: 2.5rem;
+  color: var(--accent-color);
+  margin-bottom: 20px;
+}
+
+.living-card h4 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: var(--heading-color);
+}
+
+.living-card p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.1rem;
+  color: var(--default-color);
+}
+
+.living-card img {
+  max-height: 180px;
+  object-fit: cover;
+}
+
+/* Expectations */
+.expectation-card {
+  background: var(--surface-color);
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+}
+
+.expectation-card h4 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--heading-color);
+  margin-bottom: 20px;
+}
+
+.expectation-card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.expectation-card ul li {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.1rem;
+  color: var(--default-color);
+  margin-bottom: 12px;
+  position: relative;
+  padding-left: 25px;
+}
+
+.expectation-card ul li:before {
+  content: '\2022';
+  color: var(--accent-color);
+  font-size: 1.8rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.expectation-card img {
+  max-height: 180px;
+  object-fit: cover;
+}
+
+/* Open Positions */
+.accordion-item {
+  border: none;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+}
+
+.accordion-button {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--heading-color);
+  background-color: var(--surface-color);
+  padding: 25px;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: color-mix(in srgb, var(--accent-color), transparent 90%);
+  color: var(--accent-color);
+}
+
+.accordion-body {
+  padding: 30px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.1rem;
+  color: var(--default-color);
+}
+
+.accordion-body p, .accordion-body ul {
+  margin-bottom: 20px;
+}
+
+.accordion-body ul li {
+  margin-bottom: 12px;
+}
+
+.accordion-body .btn-primary {
+  background-color: var(--accent-color);
+  border: none;
+  padding: 12px 25px;
+  border-radius: 6px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.1rem;
+  color: var(--contrast-color);
+}
+
+.accordion-body .btn-primary:hover {
+  background-color: color-mix(in srgb, var(--accent-color), transparent 15%);
+}
+
+/* Application Process */
+.process-steps {
+  margin-top: 40px;
+}
+
+.step-card {
+  background: var(--surface-color);
+  padding: 25px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.step-card:hover {
+  transform: translateY(-5px);
+}
+
+.step-card .step-number {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--accent-color);
+  margin-bottom: 20px;
+}
+
+.step-card h4 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: var(--heading-color);
+}
+
+.step-card p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.1rem;
+  color: var(--default-color);
+}
+
+/* Benefits */
+.benefit-card {
+  background: var(--surface-color);
+  padding: 25px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.benefit-card:hover {
+  transform: translateY(-5px);
+}
+
+.benefit-card i {
+  font-size: 2.5rem;
+  color: var(--accent-color);
+  margin-bottom: 20px;
+}
+
+.benefit-card h4 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: var(--heading-color);
+}
+
+.benefit-card p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.1rem;
+  color: var(--default-color);
+}
+
+/* Modal Styling */
+.modal-dialog-right {
+  margin: 0 0 0 auto;
+  width: 50%;
+  max-width: 650px;
+  height: 100vh;
+  transform: translateX(0) !important;
+}
+
+.modal-content {
+  height: 100%;
+  border-radius: 0;
+  border: none;
+  background-color: var(--surface-color);
+  box-shadow: -5px 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.modal-header {
+  background-color: var(--accent-color);
+  color: var(--contrast-color);
+  border-bottom: none;
+  padding: 25px;
+}
+
+.modal-header .modal-title {
+  font-family: 'Roboto', sans-serif;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.modal-header .btn-close {
+  filter: invert(1);
+}
+
+.modal-body {
+  padding: 40px;
+  overflow-y: auto;
+}
+
+.php-email-form .form-label {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: var(--heading-color);
+}
+
+.php-email-form .form-control {
+  border-radius: 6px;
+  border: 1px solid #ced4da;
+  padding: 12px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.1rem;
+}
+
+.php-email-form .form-control:focus {
+  border-color: var(--accent-color);
+  box-shadow: 0 0 5px rgba(var(--accent-color-rgb), 0.3);
+}
+
+.php-email-form textarea {
+  resize: vertical;
+}
+
+.php-email-form button[type="submit"] {
+  background-color: var(--accent-color);
+  border: none;
+  padding: 14px 35px;
+  border-radius: 6px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.1rem;
+  color: var(--contrast-color);
+  transition: background-color 0.3s ease;
+}
+
+.php-email-form button[type="submit"]:hover {
+  background-color: color-mix(in srgb, var(--accent-color), transparent 15%);
+}
+
+.php-email-form .loading,
+.php-email-form .error-message,
+.php-email-form .sent-message {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.1rem;
+  margin-top: 15px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 992px) {
+  .modal-dialog-right {
+    width: 100%;
+    max-width: none;
+    margin: 0;
+  }
+
+  .employment-hero {
+    padding: 40px;
+  }
+
+  .hero-content h2 {
+    font-size: 2.5rem;
+  }
+
+  .section-header h3 {
+    font-size: 2.5rem;
+  }
+
+  .living-card img,
+  .expectation-card img {
+    max-height: 150px;
+  }
+}
+
+@media (max-width: 576px) {
+  .employment-metrics {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .metric {
+    margin-bottom: 20px;
+  }
+
+  .living-card h4,
+  .expectation-card h4,
+  .benefit-card h4 {
+    font-size: 1.5rem;
+  }
+
+  .step-card .step-number {
+    font-size: 2rem;
+  }
+}
